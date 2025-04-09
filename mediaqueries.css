@@ -106,7 +106,7 @@
   }
   #profile .profile-pic {
     width: 80%; /* Make the image smaller */
-    max-width: 250px; /* Set a maximum width */
+    max-width: 150px; /* Set a maximum width */
     height: auto; /* Ensure the aspect ratio is maintained */
     border-radius: 50%; /* Keep the round shape */
   }
