@@ -53,11 +53,15 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 0;
   }
   article {
     font-size: 1rem;
+  }
+
+  .logo{
+    color: grey;
   }
   footer nav {
     height: fit-content;
@@ -100,4 +104,11 @@
   .text-container {
     text-align: justify;
   }
+  #profile .profile-pic {
+    width: 80%; /* Make the image smaller */
+    max-width: 250px; /* Set a maximum width */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    border-radius: 50%; /* Keep the round shape */
+  }
+  
 }
