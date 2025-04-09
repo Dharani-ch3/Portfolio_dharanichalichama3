@@ -66,6 +66,13 @@ a:hover {
 .logo {
   font-size: 2rem;
 }
+.black-text {
+  color: black;
+}
+
+.navy-text {
+  color: gray;
+}
 
 .logo:hover {
   cursor: default;
