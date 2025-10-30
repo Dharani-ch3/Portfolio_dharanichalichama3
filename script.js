@@ -1,6 +1,6 @@
 const nameElement = document.getElementById("name-toggle");
 
-const names = [" Full Stack Developer", "Back-end Developer", "Web Developer"];
+const names = [" Full Stack Developer", "Gen AI engineer", "Web Developer"];
 let index = 0;
 
 function typeText(text, callback) {
