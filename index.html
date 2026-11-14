@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Dharani Chalichama - Generative AI Engineer with 4+ years building LLM, RAG, and multi-agent systems and the full-stack products around them."
+    />
+    <title>Dharani Chalichama | Generative AI Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -19,6 +23,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -35,23 +40,27 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+    <!-- ================= PROFILE ================= -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpeg" alt="Dharani Chalichama Profile Pic" class="profile-pic"/>
+        <img src="./assets/profile-pic.jpeg" alt="Dharani Chalichama" class="profile-pic" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hi, I'm</p>
         <p class="section__text__p2">Dharani Chalichama</p>
         <div id="name-toggle"></div>
+        <p class="tagline">
+          I build LLM, RAG, and multi-agent systems that hold up in production, plus the full-stack
+          products around them.
+        </p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/dharani_chalichama.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/dharani_chalichama.pdf')">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -63,188 +72,586 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/dharani-chalichama/'"/>
+            onclick="location.href='https://www.linkedin.com/in/dharani-chalichama/'"
+          />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
+            alt="My GitHub profile"
             class="icon"
-            onclick="location.href='https://github.com/Dharani-ch3'"/>
+            onclick="location.href='https://github.com/Dharani-ch3'"
+          />
         </div>
       </div>
     </section>
+
+    <!-- ================= ABOUT ================= -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/about me.jpeg"alt="Profile picture" class="about-pic"/>
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img src="./assets/experience.png"alt="Experience icon"class="icon"/>
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>4+ years<br />Generative AI &amp; Full-Stack Engineering</p>
             </div>
             <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
-              <p> <b> B.Tec</b>  – Bachelor’s in Computer Science and Engineering</p>
-              <p>  <b>M.Sc</b> – Master’s in Computer Science</p>
+              <p><b>M.S. Computer Science</b><br />University of North Texas, 2025</p>
+              <p><b>B.E. Computer Science</b><br />KL University, 2023</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I'm a passionate Computer Science graduate student at the University of North Texas. I thrive on building impactful digital experiences, blending creativity with technologies like React, Node.js, and MongoDB. With a strong foundation in full-stack development, My Recent Project was Parenting Navigator projects. As a dedicated front-end developer, I'm driven by curiosity, continuous learning, and a love for turning ideas into real-world solutions.
-
+              I'm a Generative AI Engineer at BN Associates, where I've spent the last two and a half
+              years as lead engineer for an enterprise healthcare client. I first built their
+              full-stack product (React/Next.js web, React Native mobile, Python services), and today
+              I own the LLM, RAG, and agent work that runs on top of it.
+            </p>
+            <p>
+              I enjoy taking a business problem all the way to a service that's measured and
+              monitored in production, using LangGraph agents, custom MCP servers, and grounded RAG.
+              In healthcare every agent action has to be traceable, so I care about evaluation and
+              governance as much as the model itself.
             </p>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- ================= EXPERIENCE ================= -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
+
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="timeline">
+          <!-- BN Associates - GenAI Engineer -->
+          <div class="details-container job-card">
+            <div class="job-header">
+              <h3>Generative AI Engineer</h3>
+              <span class="job-meta">Jan 2026 – Present · Remote (Virginia, US)</span>
+            </div>
+            <p class="job-company">BN Associates Inc.</p>
+            <ul>
+              <li>
+                Lead GenAI development for an enterprise healthcare client, owning chat, voice,
+                document, and agent features end to end on one shared LLM, retrieval, and governance
+                layer.
+              </li>
+              <li>
+                Designed stateful multi-agent workflows in LangGraph with checkpointers, retries, and
+                subgraphs, so multi-step service requests finish with minimal hand-offs.
+              </li>
+              <li>
+                Built custom MCP servers connecting agents to ServiceNow, Salesforce, internal
+                databases, and email. Agents read incoming messages and draft responses for human
+                review.
+              </li>
+              <li>
+                Reworked retrieval, prompting, and grounding on Amazon Bedrock and SageMaker, which
+                cut hallucination-driven chatbot errors by about 30%.
+              </li>
+              <li>
+                Set up LLM evaluation (groundedness, relevance, accuracy, latency) and sent
+                low-confidence cases to a human reviewer. Also added PII masking and audit logging, so
+                every agent action can be traced.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">LangGraph</span>
+              <span class="tag">CrewAI</span>
+              <span class="tag">MCP</span>
+              <span class="tag">Anthropic Claude</span>
+              <span class="tag">GPT-4</span>
+              <span class="tag">LLaMA + LoRA</span>
+              <span class="tag">Pinecone</span>
+              <span class="tag">Neo4j</span>
+              <span class="tag">Bedrock</span>
+              <span class="tag">Azure AI Foundry</span>
+            </div>
+          </div>
+
+          <!-- BN Associates - Full Stack Engineer -->
+          <div class="details-container job-card">
+            <div class="job-header">
+              <h3>Full Stack Engineer</h3>
+              <span class="job-meta">Mar 2024 – Jan 2026 · Remote (Virginia, US)</span>
+            </div>
+            <p class="job-company">BN Associates Inc.</p>
+            <ul>
+              <li>
+                Lead full-stack and AI engineer for the same healthcare client, shipping a
+                React/Next.js web app, a React Native mobile app, and scalable Python backends.
+              </li>
+              <li>
+                Built a voice assistant and IVR flow with AWS Lex, Transcribe, and Polly that reused
+                the chat assistant's LLM/RAG layer instead of a second stack.
+              </li>
+              <li>
+                Built document processing with OpenCV, OCR, and a CNN classifier, cutting manual
+                document review time by about 40%.
+              </li>
+              <li>
+                Fine-tuned BERT for intent and entity recognition, which improved NLU accuracy by about
+                25% over the previous baseline.
+              </li>
+              <li>
+                Automated model rollout with AWS CDK, Lambda, and ECS Fargate, taking new-model
+                releases from days to hours.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Django</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">AWS Lex</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">Kubernetes</span>
+            </div>
+          </div>
+
+          <!-- Infosys -->
+          <div class="details-container job-card">
+            <div class="job-header">
+              <h3>Full Stack Engineer – Healthcare Domain</h3>
+              <span class="job-meta">Apr 2022 – Jun 2023 · Hyderabad, India</span>
+            </div>
+            <p class="job-company">Infosys</p>
+            <ul>
+              <li>
+                Built and maintained healthcare applications and REST services in Python, Django,
+                JavaScript, and SQL.
+              </li>
+              <li>
+                Tuned data-heavy Django views and SQL queries, cutting page-load time by about 20%.
+              </li>
+              <li>
+                Automated reports, data cleanup, and API ingestion with Python and Apache Airflow,
+                reducing manual effort by about 30%.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">SQL / PL/SQL</span>
+              <span class="tag">Apache Airflow</span>
+              <span class="tag">ELK Stack</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <h2 class="group-title">Technical Skills</h2>
+        <div class="about-containers skills-wrap">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Generative AI &amp; Agents</h2>
             <div class="article-container">
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>LLMs</h3><p>GPT-4, Claude, LLaMA</p></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>LangGraph</h3><p>LangChain, CrewAI</p></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>MCP</h3><p>Custom servers</p></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png"alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>RAG</h3><p>Pinecone, FAISS</p></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png"alt="Experience icon"class="icon"/>
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Fine-Tuning</h3><p>LoRA, BERT</p></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png"alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Evaluation</h3><p>Guardrails, HITL</p></div>
               </article>
             </div>
           </div>
+
           <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
+            <h2 class="experience-sub-title">Full-Stack Development</h2>
             <div class="article-container">
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Python</h3><p>FastAPI, Django</p></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>React</h3><p>Next.js, Native</p></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>TypeScript</h3><p>JavaScript</p></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Node.js</h3><p>REST APIs</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>APIs</h3><p>GraphQL, gRPC</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Databases</h3><p>PostgreSQL, Redis</p></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud, ML &amp; DevOps</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>AWS</h3><p>Bedrock, SageMaker</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Azure &amp; GCP</h3><p>OpenAI, Vertex AI</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Deep Learning</h3><p>PyTorch, TensorFlow</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Containers</h3><p>Docker, Kubernetes</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>CI/CD</h3><p>Terraform, Jenkins</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Checkmark" class="icon" />
+                <div><h3>Observability</h3><p>OpenTelemetry, ELK</p></div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png"alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
+
+    <!-- ================= PROJECTS ================= -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
+
+      <!-- Production work (client details kept general on purpose) -->
+      <h2 class="group-title">Featured Work in Production</h2>
+      <div class="case-grid">
+        <div class="details-container color-container case-card">
+          <h3>Multi-Agent Healthcare Workflows</h3>
+          <p>
+            Stateful LangGraph agents that plan, check each other's work, and carry multi-step
+            service requests to completion. Low-confidence cases go to a human before any final
+            action.
+          </p>
+          <div class="tags">
+            <span class="tag">LangGraph</span><span class="tag">CrewAI</span
+            ><span class="tag">Claude</span><span class="tag">A2A</span>
+          </div>
+        </div>
+
+        <div class="details-container color-container case-card">
+          <h3>Grounded RAG Assistant</h3>
+          <p>
+            Retrieval over approved enterprise knowledge, with a Neo4j knowledge graph for questions
+            that span users, documents, roles, and organizations.
+          </p>
+          <p class="case-result">About 30% fewer hallucination-driven errors</p>
+          <div class="tags">
+            <span class="tag">Pinecone</span><span class="tag">Weaviate</span
+            ><span class="tag">Neo4j</span><span class="tag">Bedrock</span>
+          </div>
+        </div>
+
+        <div class="details-container color-container case-card">
+          <h3>MCP Servers &amp; Enterprise Integrations</h3>
+          <p>
+            Custom MCP servers give agents scoped access to ServiceNow, Salesforce, internal
+            databases, and email. Agents read incoming messages, pull out what matters, and draft
+            replies for review.
+          </p>
+          <div class="tags">
+            <span class="tag">MCP</span><span class="tag">FastAPI</span
+            ><span class="tag">ServiceNow</span><span class="tag">Salesforce</span>
+          </div>
+        </div>
+
+        <div class="details-container color-container case-card">
+          <h3>Voice Assistant &amp; IVR</h3>
+          <p>
+            A voice-enabled healthcare assistant that reuses the chat assistant's LLM and RAG layer,
+            so there is only one stack to maintain.
+          </p>
+          <div class="tags">
+            <span class="tag">AWS Lex</span><span class="tag">Transcribe</span
+            ><span class="tag">Polly</span>
+          </div>
+        </div>
+
+        <div class="details-container color-container case-card">
+          <h3>Intelligent Document Processing</h3>
+          <p>
+            OpenCV cleanup, OCR, and a CNN classifier behind a secure upload flow. The same flow
+            feeds the embedding pipeline.
+          </p>
+          <p class="case-result">About 40% less manual review time</p>
+          <div class="tags">
+            <span class="tag">OpenCV</span><span class="tag">OCR</span
+            ><span class="tag">TensorFlow</span>
+          </div>
+        </div>
+
+        <div class="details-container color-container case-card">
+          <h3>Healthcare NLU Models</h3>
+          <p>
+            BERT models fine-tuned for intent classification and entity recognition on healthcare
+            requests, then exported to ONNX and quantized for fast serving.
+          </p>
+          <p class="case-result">About 25% higher NLU accuracy</p>
+          <div class="tags">
+            <span class="tag">BERT</span><span class="tag">PyTorch</span
+            ><span class="tag">Hugging Face</span><span class="tag">ONNX</span>
+          </div>
+        </div>
+      </div>
+      <p class="note">Client work is described in general terms to respect confidentiality.</p>
+
+      <!-- Personal projects -->
+      <h2 class="group-title">Personal Projects</h2>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+              <img src="./assets/project-1.png" alt="Parenting Navigator" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Parenting Navigator</h2>
+            <!-- TODO: replace this line with one sentence on what the app does for parents -->
+            <p class="project-desc">Full-stack web app built with React, Node.js, and MongoDB.</p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Dharani-ch3/App.git'">Github</button>
-              <button class="btn btn-color-2 project-btn"onclick="location.href='https://parentnav.vercel.app/'">Live Demo</button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Dharani-ch3/App.git'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://parentnav.vercel.app/'"
+              >
+                Live Demo
+              </button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-3.png"alt="Project 2"class="project-img"/>
+              <img src="./assets/project-3.png" alt="Portfolio website" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+            <p class="project-desc">This site: responsive HTML, CSS, and JavaScript, hosted on Netlify.</p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"onclick="location.href='https://github.com/Dharani-ch3/Portfolio_dharanichalichama3.git'">Github</button>
-              <button class="btn btn-color-2 project-btn"onclick="location.href='https://dharanichalichama.netlify.app/'">Live Demo</button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Dharani-ch3/Portfolio_dharanichalichama3.git'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://dharanichalichama.netlify.app/'"
+              >
+                Live Demo
+              </button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-2.png"alt="Project 3"class="project-img"/>
+              <img src="./assets/project-2.png" alt="More projects on GitHub" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">More on GitHub</h2>
+            <p class="project-desc">Experiments, coursework, and side projects.</p>
             <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"onclick="location.href='https://github.com/Dharani-ch3.git'">Github </button>
-              <button class="btn btn-color-2 project-btn"onclick="location.href='https://dharanichalichama.netlify.app/'">Live Demo</button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Dharani-ch3'"
+              >
+                View GitHub
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png"alt="Arrow icon"class="icon arrow"onclick="location.href='./#contact'"/></section>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section id="certifications">
+      <p class="section__text__p1">Credentials &amp; Learning</p>
+      <h1 class="title">Certifications</h1>
+      <div class="cert-grid">
+        <div class="details-container color-container cert-card">
+          <img src="./assets/education.png" alt="Certificate icon" class="icon" />
+          <h3>Google AI Professional Certificate</h3>
+          <p>Google · Coursera · Nov 2026</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.coursera.org/verify/professional-cert/KUDDF7RE4CLD')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container cert-card">
+          <img src="./assets/education.png" alt="Certificate icon" class="icon" />
+          <h3>AI Fundamentals</h3>
+          <p>Google · Coursera · Nov 2026</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.coursera.org/verify/CLS09WOZ3TFB')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container cert-card">
+          <img src="./assets/education.png" alt="Certificate icon" class="icon" />
+          <h3>AI for App Deployment</h3>
+          <p>Google · Coursera · Nov 2026</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.coursera.org/verify/G70V0SWC6SL0')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container cert-card">
+          <img src="./assets/education.png" alt="Certificate icon" class="icon" />
+          <h3>Generative AI: Prompt Engineering Basics</h3>
+          <p>IBM · Coursera · Nov 2025</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.coursera.org/verify/BTJBLYD6UBBR')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container cert-card">
+          <img src="./assets/education.png" alt="Certificate icon" class="icon" />
+          <h3>Getting Started with Git and GitHub</h3>
+          <p>IBM · Coursera · Nov 2025</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.coursera.org/verify/U1W3W3B9FP9H')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container cert-card">
+          <img src="./assets/education.png" alt="Certificate icon" class="icon" />
+          <h3>Python for Data Science, AI &amp; Development</h3>
+          <p>IBM · Coursera · Oct 2025</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.coursera.org/verify/CPTE00VPPI46')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container cert-card">
+          <img src="./assets/education.png" alt="Certificate icon" class="icon" />
+          <h3>House of Code (Campus Edition) – MCQ Challenge</h3>
+          <p>Lowe's Companies, Inc. · via Unstop</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://unstop.com/certificate-preview/0a5ae2bb-d4e2-43d1-b6dc-f98a6f8d130b')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- ================= CONTACT ================= -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      <p class="tagline">
+        Based in Dallas, TX and open to relocation, hybrid, or remote roles. The quickest way to reach
+        me is email or LinkedIn.
+      </p>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img src="./assets/email.png"alt="Email icon"class="icon contact-icon email-icon"/>
-          <p><a href="mailto:dharanichalichama@gmail.com">dharanichalichama@gmail.com</a></p>
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:chalichamadharani@gmail.com">chalichamadharani@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img src="./assets/linkedin.png"alt="LinkedIn icon"class="icon contact-icon"/>
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
           <p><a href="https://www.linkedin.com/in/dharani-chalichama/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+          <p><a href="https://github.com/Dharani-ch3">GitHub</a></p>
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -252,6 +659,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>

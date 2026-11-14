@@ -48,9 +48,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  /* was a fixed 40vh, which cut off the longer contact section and footer */
   #contact,
   footer {
-    height: 40vh;
+    height: fit-content;
+    padding-bottom: 2rem;
   }
   #profile {
     height: auto;
@@ -59,9 +61,9 @@
   article {
     font-size: 1rem;
   }
-
-  .logo{
+  .logo {
     color: grey;
+    font-size: 1.5rem;
   }
   footer nav {
     height: fit-content;
@@ -73,17 +75,15 @@
     flex-wrap: wrap;
   }
   .contact-info-container {
-    margin: 0;
+    margin: 0.5rem;
   }
+  /* was 0.5rem (about 8px), too small to read on a phone */
   .contact-info-container p,
   .nav-links li a {
-    font-size: 0.5rem;
+    font-size: 0.95rem;
   }
   .experience-sub-title {
     font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
   }
   .nav-links {
     flex-direction: column;
@@ -98,17 +98,41 @@
   .section__text__p2 {
     font-size: 1.25rem;
   }
+  #name-toggle {
+    font-size: 1.2rem;
+    min-height: 1.6rem;
+  }
   .title {
     font-size: 2rem;
   }
+  /* left-aligned: justified text left big gaps between words on phones */
   .text-container {
-    text-align: justify;
+    text-align: left;
+  }
+  #about .about-containers .details-container {
+    min-width: 100%;
+    box-sizing: border-box;
   }
   #profile .profile-pic {
-    width: 80%; /* Make the image smaller */
-    max-width: 150px; /* Set a maximum width */
-    height: auto; /* Ensure the aspect ratio is maintained */
-    border-radius: 50%; /* Keep the round shape */
+    width: 80%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
   }
-  
+
+  /* new sections */
+  .skills-wrap .details-container {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .job-header {
+    flex-direction: column;
+  }
+  .case-grid,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .details-container {
+    padding: 1.25rem;
+  }
 }
