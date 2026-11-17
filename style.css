@@ -498,6 +498,32 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
+/* Personal projects: as many columns as fit, so cards wrap instead of overflowing */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-grid .project-img {
+  max-width: 18rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .project-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.project-grid .details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-grid .btn-container {
+  margin-top: auto;
+}
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
